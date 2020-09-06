@@ -1,0 +1,94 @@
+<style type="text/css">
+    .header {
+        background: #8a8a8a;
+    }
+
+    .header .columns {
+        padding-bottom: 0;
+    }
+
+    .header p {
+        color: #fff;
+        padding-top: 15px;
+    }
+
+    .header .wrapper-inner {
+        padding: 20px;
+    }
+
+    .header .container {
+        background: transparent;
+    }
+
+    table.button.facebook table td {
+        background: #3B5998 !important;
+        border-color: #3B5998;
+    }
+
+    table.button.twitter table td {
+        background: #1daced !important;
+        border-color: #1daced;
+    }
+
+    table.button.google table td {
+        background: #DB4A39 !important;
+        border-color: #DB4A39;
+    }
+
+    .wrapper.secondary {
+        background: #f3f3f3;
+    }
+</style>
+
+
+
+<wrapper class="header">
+    <container>
+        <row class="collapse">
+            <columns small="6">
+                <img src="http://placehold.it/200x50/663399">
+            </columns>
+            <columns small="6">
+                <p class="text-right"></p>
+            </columns>
+        </row>
+    </container>
+</wrapper>
+
+<container>
+
+    <spacer size="16"></spacer>
+
+    <row>
+        <columns small="12">
+
+            <h1>Hi, <%= name %></h1>
+            <p class="lead">Project Clear Verification</p>
+            <p>Congratulations! You have successfully created a new Project Clear account. To verify your account and
+                get started, simply click the link below:
+            </p>
+            <callout class="primary">
+                <p><a href="http://localhost:3001/register/<%= token %>" class="btn btn-primary"
+                        role="button">http://localhost:3001/register/<%= token %></a></p>
+            </callout>
+        </columns>
+    </row>
+    <wrapper class="secondary">
+
+        <spacer size="16"></spacer>
+
+        <row>
+            <columns large="6">
+                <h5>Connect With Us:</h5>
+                <button class="facebook expand" href="http://projectclear.com">Facebook</button>
+                <button class="twitter expand" href="http://projectclear.com">Twitter</button>
+                <button class="google expand" href="http://projectclear.com">Google+</button>
+            </columns>
+            <columns large="6">
+                <h5>Contact Info:</h5>
+                <p>Phone: 408-341-0600</p>
+                <p>Email: <a href="mailto:email@projectclear.com">email@projectclear.com</a></p>
+            </columns>
+        </row>
+    </wrapper>
+</container>
